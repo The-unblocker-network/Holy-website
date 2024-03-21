@@ -1,0 +1,82 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0078d7; /* Windows blue */
+}
+
+/* Desktop background */
+.desktop-background {
+    background-image: url('windows-wallpaper.jpg'); /* Add your Windows wallpaper */
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Taskbar styles */
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px; /* Windows taskbar height */
+    background-color: #1e1e1e; /* Windows taskbar color */
+    display: flex;
+    justify-content: space-between; /* Align items */
+    align-items: center;
+    padding: 0 10px;
+    border-top: 1px solid #000; /* Windows taskbar top border */
+}
+
+/* Start button styles */
+.start-button {
+    background-color: #0078d7; /* Windows blue */
+    color: #fff;
+    border: none;
+    font-size: 14px; /* Font size */
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.start-button:hover {
+    background-color: #0056b3; /* Darker blue when hovered */
+}
+
+/* Task buttons container */
+.task-buttons {
+    display: flex;
+}
+
+/* Task button styles */
+.task-button {
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px; /* Font size */
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 5px; /* Space between buttons */
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+.task-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Start menu styles */
+.start-menu {
+    position: absolute;
+    bottom: 40px; /* Above taskbar */
+    left: 0;
+    width: 200px; /* Start menu width */
+    background-color: #1e1e1e;
+}
