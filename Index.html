@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubuntu-like Desktop</title>
+    <title>The Holy Website</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Add this style to position the random pixel */
@@ -22,19 +22,33 @@
     
     <!-- Taskbar -->
     <div class="taskbar">
-        <button class="task-button" onclick="toggleApp('github')">GitHub</button>
-        <button class="task-button" onclick="toggleApp('youtube')">YouTube</button>
-        <button class="task-button" onclick="toggleApp('browser')">Browser</button>
-        <button class="task-button" onclick="toggleApp('terminal')">Terminal</button>
-        <button class="task-button" onclick="copyCode()">Copy Code</button>
-        <button class="task-button" onclick="toggleApp('proxy')">Proxy</button>
-        <button class="task-button" onclick="toggleApp('settings')">Settings</button>
-        <button class="task-button" onclick="toggleApp('wine')">Wine</button>
-        <input type="text" id="searchInput" onkeyup="searchApps()" placeholder="Search apps...">
-        <!-- Add more app buttons as needed -->
+        <button class="start-button">Start</button>
+        <div class="task-buttons">
+            <button class="task-button" onclick="toggleApp('github')">GitHub</button>
+            <button class="task-button" onclick="toggleApp('youtube')">YouTube</button>
+            <button class="task-button" onclick="toggleApp('browser')">Browser</button>
+            <button class="task-button" onclick="toggleApp('terminal')">Terminal</button>
+            <button class="task-button" onclick="copyCode()">Copy Code</button>
+            <button class="task-button" onclick="toggleApp('proxy')">Proxy</button>
+            <button class="task-button" onclick="toggleApp('settings')">Settings</button>
+            <button class="task-button" onclick="toggleApp('wine')">Wine</button>
+            <input type="text" id="searchInput" onkeyup="searchApps()" placeholder="Search apps...">
+            <!-- Add more app buttons as needed -->
+        </div>
     </div>
     
     <!-- App windows will be loaded here -->
+
+    <!-- Start menu -->
+    <div class="start-menu">
+        <ul>
+            <li><a href="#">All Programs</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">System Tools</a></li>
+            <li><a href="#">Run</a></li>
+            <li><a href="#">Exit</a></li>
+        </ul>
+    </div>
 
     <!-- Random pixel -->
     <div class="random-pixel" id="random-pixel"></div>
